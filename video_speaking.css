@@ -1,0 +1,142 @@
+.set_button{
+    background-color: dodgerblue;
+    font-size: 16px;
+    border: outset;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 150px;
+    height: 30px;
+    display: inline;
+}
+
+.two_holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    text-align: center;
+}
+
+.vid_holder {
+    margin: 10px;
+    width:90%;
+}
+
+table {
+    border: 2px solid antiquewhite;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: antiquewhite;
+    padding: 2%;
+    width: 85%;
+}
+
+td {
+    border: 2px solid white;
+    height: 320px;
+    vertical-align: top;
+    width: 50%;
+    text-align: center;
+}
+
+
+
+
+.table_help {
+    margin: auto;
+    margin-top: 10px;
+}
+
+.bold {
+    font-weight: bold;
+    background-color: gainsboro;
+}
+
+.normie {
+    font-weight: normal;
+}
+
+#blank_t {
+    background-color: transparent;
+}
+
+.q_holder {
+    margin: 5px;
+    height: 60%;
+    width: 90%;
+    text-align: center;
+    display: inline-block;
+}
+
+
+.button {
+    background-color: rgb(34, 139, 34);
+    font-size: 16px;
+    border: outset;
+    font-weight: bold;
+    display: inline;
+    color:antiquewhite;
+    margin: auto;
+    width: auto;
+    margin-top: 3px;
+}
+
+
+
+.labelq {
+    font-size: 14px;
+    display: inline;
+    font-weight: bold;
+    margin-top: 3px;
+}
+
+
+.q_holder .speakerbox {
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    width: 300px;
+    font-size: 14px;
+    border-style: inset;
+    background-color: rgb(205, 224, 243);
+    padding: 3%
+}
+
+
+.cool {
+    border: solid 2px antiquewhite;
+    width: 85%;
+    margin-top: 20px;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+
+.answer_button {
+    background-color: dodgerblue;
+    border: none;
+    margin-top: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    width: 300px;
+    height: 30px;
+}
+
+.answer {
+    font-size: 14px;
+    color: dodgerblue;
+    text-align: left;
+    width: 90%;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+center {
+    margin-left: auto;
+    margin-right: auto;
+}
