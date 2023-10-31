@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" translate="no">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="video_speaking.css" rel="stylesheet" type="text/css">
+<script src="videoResponse1.js"></script>
+<main>
+</main>
+<br>
+<br>       
+<head>
+<div style="text-align:center">
+    <h1 style="color:dodgerblue; text-align: center">Video Discussion Speaking Practice</h1>
+    <h4 style="text-align: center; font-family: Arial, Helvetica, sans-serif;">Select one of the two discussions below. <br> Each discussion contains three videos, and finishes with a question to you. <br> Push "start speaking" to answer the question.</h4>
+    <br>
+    <br>
+    <button id="set1" class="set_button" onclick="Prep('container1')">Conversation 1</button> 	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
+    <button id="set2" class="set_button" onclick="Prep('container2')">Conversation 2</button>
+    <br>
+
+    <div id="container1" style="display:none">
+        <div id="convo1" style="text-align: center; margin: auto">
+            <br>
+                <table class="center">
+                    <tr>
+                        <th colspan="2"><h3 style="font-family: Arial, Helvetica, sans-serif; color:gray">Conversation 1: Discussion about Manditory PE Classes </h3></th>
+                    </tr>
+                    <tr>
+                        <td style="width:545px">
+                            <div id="clicky" style="margin-left:auto;margin-right:auto;text-align:center">
+                                <iframe src="https://www.youtube.com/embed/o6ym69zTSyM" width="540" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cool">
+                                <label for="c1q1" class="labelq">Response 1:</label>
+                                <button id="c1q1" class="button" onclick="cqqspk('c1q1')">Start Speaking</button>
+                                <br>
+                                <p id="c1q1_inter" class="interim" style="display:none"></p>
+                                <p id="c1q1_speech" class="speakerbox" style="height:150px; background-color: aliceblue"></p>
+                                <p id="c1q1_answer" class="answer" style="display:none">Not much. <br><br> Nothing.</p>
+                                <br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="clicky" style="margin-left:auto;margin-right:auto;text-align:center">
+                            <iframe src="https://www.youtube.com/embed/MHHqbwDYJCo" width="540" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cool">
+                                <label for="c1q2" class="labelq">Response 2:</label>
+                                <button id="c1q2" class="button" onclick="cqqspk('c1q2')">Start Speaking</button>
+                                <br>
+                                <p id="c1q2_inter" class="interim" style="display:none"></p>
+                                <p id="c1q2_speech" class="speakerbox" style="height:150px; background-color: aliceblue"></p>
+                                <p id="c1q2_answer" class="answer" style="display:none">Sure, I don't mind helping.</p>
+                                <br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="clicky" style="margin-left:auto;margin-right:auto;text-align:center">
+                            <iframe src="https://www.youtube.com/embed/mvZ5Mr5t5dk" width="540" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cool">
+                                <label for="c1q3" class="labelq">Response 3:</label>
+                                <button id="c1q3" class="button" onclick="cqqspk('c1q3')">Start Speaking</button>
+                                <br>
+                                <p id="c1q3_inter" class="interim" style="display:none"></p>
+                                <p id="c1q3_speech" class="speakerbox" style="height:150px; background-color: aliceblue"></p>
+                                <p id="c1q3_answer" class="answer" style="display:none">The way I see it, PE classes shouldn't be mandatory because we are adults, so we can choose what exercise to do and how much to do ourselves. Also, we have many more important classes to take, so we should focus on our majors rather than extra curricular subjects such as PE.</p>
+                                <br>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <br>
+                <button id="answers1" class="answer_button" onclick="SeeAnswers(1)">See Example Answers</button>
+        </div>
+    </div>
+
+
+
+
+
+    <div id="container2" style="display:none">
+        <div id="convo2" style="text-align: center; margin: auto">
+            <br>
+                <table class="center">
+                    <tr>
+                        <th colspan="2"><h3 style="font-family: Arial, Helvetica, sans-serif; color:gray">Conversation 2: Discussion about the Banning of Plastic Bags</h3></th>
+                    </tr>
+                    <tr>
+                        <td style="width:545px">
+                            <div id="clicky" style="margin-left:auto;margin-right:auto;text-align:center">
+                            <iframe src="https://www.youtube.com/embed/IXf0eXI7sPA" width="540" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cool">
+                                <label for="c2q1" class="labelq">Response 1:</label>
+                                <button id="c2q1" class="button" onclick="cqqspk('c2q1')">Start Speaking</button>
+                                <br>
+                                <p id="c2q1_inter" class="interim" style="display:none"></p>
+                                <p id="c2q1_speech" class="speakerbox" style="height:150px; background-color: aliceblue"></p>
+                                <p id="c2q1_answer" class="answer" style="display:none">Pretty good. <br><br> Alright.</p>
+                                <br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="clicky" style="margin-left:auto;margin-right:auto;text-align:center">
+                            <iframe src="https://www.youtube.com/embed/kAjHgsH_EBg" width="540" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cool">
+                                <label for="c2q2" class="labelq">Response 2:</label>
+                                <button id="c2q2" class="button" onclick="cqqspk('c2q2')">Start Speaking</button>
+                                <br>
+                                <p id="c2q2_inter" class="interim" style="display:none"></p>
+                                <p id="c2q2_speech" class="speakerbox" style="height:150px; background-color: aliceblue"></p>
+                                <p id="c2q2_answer" class="answer" style="display:none">I think it is an appropriate topic. <br><br> I don't think that is a very good topic.</p>
+                                <br>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="clicky" style="margin-left:auto;margin-right:auto;text-align:center">
+                            <iframe src="https://www.youtube.com/embed/z0R9GtcZzvY" width="540" height="315" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cool">
+                                <label for="c2q3" class="labelq">Response 3:</label>
+                                <button id="c2q3" class="button" onclick="cqqspk('c2q3')">Start Speaking</button>
+                                <br>
+                                <p id="c2q3_inter" class="interim" style="display:none"></p>
+                                <p id="c2q3_speech" class="speakerbox" style="height:150px; background-color: aliceblue"></p>
+                                <p id="c2q3_answer" class="answer" style="display:none">A case could be made that plastic bags should be banned. Maybe it is extreme, but humans are suffering because of microplastics in the water and plastic bags are a big cause of this. Furthermore, it's not fair to future generations. How would you feel if your children couldn't eat fish because the ocean was too polluted with plastic?</p>
+                                <br>
+                            </div>
+                        </td>
+                    </tr>
+                    </table>
+            <br>
+                <div class="center"><button id="answers2" class="answer_button" onclick="SeeAnswers(2)">See Example Answers</button></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
