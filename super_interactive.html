@@ -1,0 +1,52 @@
+<html>
+    <link href="../apps/w3.css" rel="stylesheet" type="text/css">
+<body onload="getSequence()">
+    <div class="w3-container w3-center w3-light-grey" id="mainStuff">
+        <div class="w3-panel w3-dark-blue w3-center">
+            <h2>Begin by clicking on the video, even if it still seems to be loading.</h2>
+        </div>
+        <div id="players"></div>
+    
+        <div id="various_fb" class="w3-panel w3-light-blue" style="display:none">
+            <p id="shijiBun" class="w3-light-blue" style="margin-top: 10px; padding-top: 10px"></p>
+            <div id="speaker">
+              <button id="speakerBTN" class="w3-button w3-green w3-round-xlarge" style="margin-top: 10px; padding-top: 10px; display:none; font-size: larger" onclick="speakNow()">Speak Now</button>
+              <button id="retryBTN" class="w3-button w3-red w3-round-xlarge" style="margin-top: 10px; padding-top: 10px; display: none; font-size: larger" onclick="speakNow()">Retry</button>
+              <br>
+              <p id="results" class="w3-light-blue w3-sans-serif" style="font-size: larger; font-weight: bold;"></p>
+              <span id="feedbackBun" class="w3-light-blue w3-text-dark-grey" style="text-shadow: 2px 2px 4px rgb(255, 255, 255); font-size: larger;"></span>
+              <br>
+              <button id="nextBTN" class="w3-button w3-purple w3-round-xlarge" onclick="newvideo()" style="margin-top: 10px; padding-top: 10px; display: none; font-size: larger">Go to the next video!</button>
+            </div>
+            <br>
+            <p id="progress_bar" class="w3-light-blue" style="font-size: x-large; font-weight: bold; text-shadow: 1px 1px 0 rgb(228, 228, 228);">Practice Video: 1 / 10</p>
+        </div>
+    </div>
+    <div class="w3-container w3-center w3-light-blue" id="fullResults" style="display: none">
+        <div class="w3-bar" id="nameStuff">
+            <label for="nameInput" class="w3-blue-text">Write Your Name:</label>
+            <input type="text" id="nameInput">
+            <button class="w3-button w3-green w3-round-xlarge" onclick="drawChart()">Get Your Results!</button> 
+        </div>
+        <div id="nextResults" style="display: none">
+            <h3 class="w3-center w3-light-blue" style="font-size: x-large; font-weight: bold; text-shadow: 1px 1px 0 rgb(228, 228, 228);">Analysis of Your Indirect Speech Ability:</h3>
+            <div id="radar_chart" class="visual" style="width:80%; height:400px; margin: auto;">
+                <canvas id="myRadar" style="width:100%; max-width:450px; margin:auto; height: fit-content; max-height: 450px;"></canvas>
+            </div>
+            <br>
+            <br>
+            <div class="w3-bar">
+                <input type="button" class="w3-button w3-purple w3-round-xlarge" id="downloadBtn" value="Download My Chart!" style="margin-bottom: 10px; padding-bottom: 10px">
+                <button class="w3-button w3-red w3-round-xlarge" onclick="window.location.reload();" style="margin-bottom: 10px; padding-bottom: 10px">Start Over!</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+<div id="holder"></div>
+
+</html>
+
+<script src="../dumbNLP/lightNLP.js?v=2"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.2.0/chart.js"></script>
+<script src="super_interactive.js"></script>
